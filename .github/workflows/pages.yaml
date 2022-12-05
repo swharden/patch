@@ -1,0 +1,47 @@
+name: Pages
+
+on:
+  workflow_dispatch:
+  push: # only runs on commits to main branch (typically after a merge)
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Publish
+    runs-on: ubuntu-latest
+    environment:
+      name: Publish
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 🛒 Checkout
+        uses: actions/checkout@v3
+      - name: ✨ Setup Hugo
+        env:
+          HUGO_VERSION: 0.100.1
+        run: |
+          mkdir ~/hugo
+          cd ~/hugo
+          curl -L "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" --output hugo.tar.gz
+          tar -xvzf hugo.tar.gz
+          sudo mv hugo /usr/local/bin
+      - name: 🛠️ Build Site
+        run: hugo
+      - name: 🛠️ Configure Pages
+        uses: actions/configure-pages@v2
+      - name: 📦 Upload Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: "./public"
+      - name: 🚀 Deploy Site
+        id: deployment
+        uses: actions/deploy-pages@v1

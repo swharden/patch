@@ -1,9 +1,6 @@
 {{ define "main" }}
 
-<header
-  class="mb-4 pt-2 pb-3 rounded text-light text-center my-4"
-  style="background-color: #20558a"
->
+<header class="mb-4 pt-2 pb-3 rounded text-light text-center my-4" style="background-color: #20558a">
   <div class="fs-1">{{ $.Title }}</div>
   <div class="fs-5 fw-light">{{ .Param "description" }}</div>
 </header>
@@ -27,5 +24,10 @@
 
   {{ end }}
 
+  <footer>
+    <div class="container mt-5 mb-3 text-end" style="max-width: 1000px">
+      <a href="https://swharden.github.io/patch/">Edit</a>
+    </div>
+  </footer>
 </main>
 {{ end }}

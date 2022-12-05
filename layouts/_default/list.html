@@ -1,0 +1,26 @@
+{{ define "main" }}
+
+<nav class="pt-3">
+    <a href="{{ .Site.BaseURL }}">The Patch Guide</a>
+    <span>»</span>
+    <a href="{{ (site.GetPage .Section).Permalink }}">{{ (site.GetPage .Section).Title }}</a>
+</nav>
+
+<header class="my-4 p-2 rounded text-light text-center" style="background-color: #20558a;">
+    <div class="fs-1">{{ .Title }}</div>
+    <div class="fs-5 fw-light pb-1">{{ .Description }}</div>
+</header>
+
+<article class="mt-3">
+    {{.Content}}
+    <ul class="lh-lg">
+        {{ range .Pages }}
+        <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+            - {{.Description}}
+        </li>
+        {{ end }}
+    </ul>
+</article>
+
+{{ end }}

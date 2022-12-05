@@ -1,0 +1,6 @@
+---
+title: Shunting
+description: Synaptic inputs can be attenuated in a process known as current shunting
+---
+
+We know from Ohm’s Law that anything which reduces Rm can reduce the voltage swing produced by a synaptic current onto a neuron. Consider the case where a cell is clamped exactly at the reversal potential of Cl-, such that the opening and closing of the GABAA channel (a Cl- channel) produces no net flow of current. Is GABA still inhibitory in this case? In isolation, no, since it did not contribute to directly resulting in an inhibitory current. However, the open GABAA channel results in reduced Rm, so any EPSCs which arrive while the GABAA channel is open will have less of an effect on the cell due to Ohm’s Law. GABA, in this case, is inhibitory because it can blunt EPSCs. The effect where the opening of one channel reduces Rm to lessen the impact of another channel is called **current shunting** and is a way in which GABAA currents can be inhibitory even when the neuron rests near the reversal potential of Cl-.

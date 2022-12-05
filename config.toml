@@ -1,4 +1,4 @@
-baseURL = 'https://swharden.github.io/patchguide/'
+baseURL = 'https://swharden.github.io/patch/'
 languageCode = 'en-us'
 enableInlineShortcodes = true
 disableKinds = ["taxonomy", "taxonomyTerm"]

@@ -62,18 +62,6 @@ NOTE: our pockel cell controller is broken such that it can only be manually adj
 - Averave Every: 1
 - hit _live scan_ and you should see stuff! Focus up and down with the stage controller. Adjust PMT as needed to change brightness.
 
-# Z-Series Stack Imaging
-
-- TODO: document this
-
-# T-Series Field Imaging
-
-- TODO: work with Sarthak to determine best settings for astrocyte imaging
-
-# Linescan Imaging
-
-- I don't see us doing this for a while. Document it when you do it
-
 # Done scanning / changing tissue
 
 - ensure laser is off (scanning) and that soft and hard shutter are closed

@@ -3,9 +3,45 @@ title: Pipette Puller
 description: How to make whole-cell patch-clamp pipettes using the P97 Flaming/Brown pipette puller
 ---
 
-> ⚠️ **WARNING:** When pulling pipettes, it is EXTREMELY important to pay attention not to damage the filament inside the puller! Damaging the filament will prevent anyone in our laboratory from being able to pull pipettes or patch cells for up to several hours while a new puller is installed and calibrated. Therefore, if there is any uncertainty, do NOT proceed. Ask for help!
-
 <img src="p97.jpg" class="img-fluid d-block mx-auto m-5">
+
+## Whole-Cell Patch Clamp Pipettes
+
+* **Puller:** SU-P97 Flaming/Brown Pipette Puller ([manual](https://www.sutter.com/manuals/P-97-DOM_OpMan.pdf))
+
+* **Filament:** 3.0mm x 3.0mm nichrome box ([Sutter BF150-86-10](https://www.sutter.com/MICROPIPETTE/glass.html))
+
+* **Pipette:** Fire-polished borosilicate glass (1.5mm outer diameter, .86mm inner diameter, [Sutter BF-150-86-10](sutter.com/MICROPIPETTE/glass.html))
+
+* [**Sutter Pipette Cookbook**](https://www.sutter.com/PDFs/pipette_cookbook.pdf) (latest version)
+
+## Patch Pipette Program
+
+* Determine `RAMP` temperature
+  * Select any program
+  * Press `CLEAR`
+  * Press `0` (NO)
+  * Press `1` (RAMP)
+  * Load a pipette and press `PULL`
+  * Note the reported `RAMP` temperature
+  * ⚠️ Heat should never exceed `RAMP + 40`
+* Enter these values into your program
+  * Heat: `RAMP + 10`
+  * Pull: `0`
+  * Velocity: `30`
+  * Time: `200`
+* Adjust velocity to achieve 4 loops
+  * Increasing velocity decreases number of loops
+  * Decreasing velocity increases number of loops
+* Adjust heat to get to 4MΩ
+  * Increasing heat decreases tip size, increasing resistance
+  * Decreasing heat increases tip size, decreasing resistance
+
+> 💡 **TIP:** Earlier loops control the shape of the neck and later loops control the shape of the tip. To achieve improved control of tip properties you can copy the program values into four lines (loops) and modify the heat and velocity of only the last line.
+
+## How to Pull Pipettes
+
+> ⚠️ **WARNING:** When pulling pipettes, it is EXTREMELY important to pay attention not to damage the filament inside the puller! Damaging the filament will prevent anyone in our laboratory from being able to pull pipettes or patch cells while a new puller is installed and calibrated. Therefore, if there is any uncertainty, do NOT proceed. Ask for help!
 
 * Ensure the puller is on and in mode #3 (shown on the left side). If not, press the reset button.
 

@@ -1,56 +1,39 @@
 ---
 title: Passive Properties
 description: Electrical features of a cell membrane that do not require channels to actively open or close
-weight: 40
+weight: 30
 ---
 
-The electrical excitability of a neuron is determined by the nature of its non-conductive membrane and the conductive ion channels embedded within it. Together, these combine to produce **passive membrane properties** (sometimes called **intrinsic properties**) which can be measured electrically. Drugs or conditions which alter the passive membrane properties of neurons can have profound impacts on their excitability (discussed in detail in the section describing Ohm’s Law). In addition, distinct classes of neurons (e.g., excitatory vs. inhibitory neurons) often have characteristically different combinations of passive membrane properties, making these properties useful in classifying neuron phenotypes. For these reasons, passive properties of neurons are measured, analyzed, and reported for virtually every electrophysiology project. **The primary passive membrane properties are Ih, Rm, and Cm.** It is important that new electrophysiologists develop a conversational understanding these primary membrane properties, their abbreviations, and a biological understanding of what they represent.
+The electrical excitability of a neuron is determined by the nature of its non-conductive membrane and the conductive ion channels embedded within it. The nature of the neural membrane and its conductivity can be described by a few primary **passive membrane properties** (sometimes called **intrinsic properties**) which can be measured electrically. Drugs or conditions which alter the passive membrane properties of neurons can have profound impacts on their excitability. Different classes of neurons often have characteristically different combinations of passive membrane properties, making their measurement useful for classifying neuron phenotypes. 
 
-> ✔️ **Check:** Passive membrane properties are introduced from a biological perspective on this page and later revisited in greater technical and experimental detail after the section on Ohm’s Law (which describes how each passive property can influence the others). Ensure you have a working knowledge of all terms on this page before proceeding!
+## Holding Current (I<sub>h</sub>)
 
-## Holding Current (Ih)
+When a machine is used to clamp the neuron's voltage at a fixed value it typically results in a continuous flow of ions passing through open channels across its membrane. Since the flow of ions is called current, the flow of ions at a specific holding voltage is termed **holding current** (I<sub>h</sub>). As the clamp voltage changes, the current flowing across the membrane typically changes too.
 
-At a given voltage, a neuron typically produces a net flow of ions across its membrane. Current is the measurement of the flow of ions, so the current across a neuron’s membrane at a certain voltage is called it’s **steady state current**. This is sometimes termed **holding current**, since it possible for the experimenter to hold (or “clamp”) the neuron at specific voltage. **Holding current is the net current across the neuron’s membrane at a specific voltage.** Since holding current changes according to the voltage of the cell (due to the electrostatic gradient of ions across the membrane as well as voltage-gated channels which open and close), current and voltage can be graphed against each other. This graph (with voltage on the horizontal axis and current on the vertical axis) is called an **I/V curve**.
+**Holding current (I<sub>h</sub>) describes the total current flowing across a neuron's membrane at a specific membrane voltage (V<sub>m</sub>).** Since holding current changes according to the voltage of the cell, current and voltage can be plotted against each other. This graph (with voltage on the horizontal axis and current on the vertical axis) is called an **I/V curve** (discussed in greater detail on the [common experiments](../../pages/experiments/) page).
 
-## Membrane Resistance (Rm)
+## Membrane Resistance (R<sub>m</sub>)
 
-**Membrane resistance is the measurement of how resistive the neural membrane is to the flow of ions.** Since ions flow through open ion channels, membrane resistance is an indication of **how many ion channels are open** at the time of the measurement. A neuron with high membrane resistance has very few open channels, and vise-versa. If a drug lowers the membrane resistance of a neuron, it means that drug is probably opening ion channels.
+**Membrane resistance describes how much the neural membrane resists the flow of ions across it.** Since ions flow through open ion channels, membrane resistance is an indication of **how many ion channels are open** at the time of the measurement. A neuron with high membrane resistance has very few open channels, and vise-versa. If a drug lowers the membrane resistance of a neuron, it means that drug is probably opening ion channels. Membrane resistance also determines how large of a voltage change will result from a current input, as described in greater detail in the next section about [Ohm's Law](../ohms-law/).
 
-## Whole-Cell Capacitance (Cm)
+## Whole-Cell Capacitance (C<sub>m</sub>)
 
-Capacitance is the amount of electrical charge which can be stored across any insulator. In neurons, the primary factor that determines capacitance is the size of its insulator (the cell membrane). The larger a neuron is, the more membrane is has, and the more charge it can store across it. Therefore, **capacitance corresponds to the size of the neuron**. Large neurons have large capacitance.
+Capacitance is the amount of electrical charge which can be stored across any insulator. In neurons, the primary factor that determines capacitance is the size of its insulator (how large the cell membrane is). The larger a neuron is, the more membrane is has, and the more charge it can separate across it. Therefore, **capacitance corresponds to the size of the neuron**. Large neurons have large capacitance.
 
-> 🤓 **Nerd Alert:** Since larger cells have more membrane, holding current (the net current through all open channels) can be difficult to compare across cells with vastly different sizes (since the largest cells will have more current just because they have more membrane, not necessarily a higher density of channels). In rare cases where experimenters desire to compare holding current across cells with vastly different sizes, this can be achieved by dividing Ih by Cm. The resulting term is called current density, and may be abbreviated Id. Also note that since Cm depends on the size of the membrane, it is correlated more to somatic membrane surface area than somatic volume.
+## Holding Current Density (Id)
 
+Since larger cells have more membrane, holding current (the net current through all open channels in a membrane) can be difficult to compare across cells with vastly different sizes (since the largest cells will have more current just because they have more membrane, not necessarily a higher density of open channels). 
 
-# Passive Membrane Properties Revisited
+In most cases experimenters will record from cells of approximately the same size so changes in C<sub>m</sub> will not largely influence R<sub>m</sub> or I<sub>h</sub>. However, in rare cases where experimenters desire to compare holding current across cells with vastly different sizes, normalizing to cell size may be achieved by dividing I<sub>h</sub> by C<sub>m</sub>. The resulting term is called **current density** (I<sub>d</sub>).
 
-Now that the resistance-dependent relationship between current transients and voltage swings is established, membrane properties will be discussed again in greater detail. This list of passive membrane properties appears in ClampEx when a cell is analyzed using the membrane test.
+## Access Resistance (R<sub>a</sub>)
 
-### Holding Current (Ih)
-* Indicates the current required to clamp a neuron at a defined (holding) voltage.
-* Relates to the total amount of current passing through all open ion channels in the neuron.
-* Holding current (Ih) is usually called steady state current (Is) in the literature. 
-* Since Rm varies with voltage (due to the electrostatic gradient of ions and opening/closing of voltage-gated ion channels), 
-* Ih changes with voltage. Therefore, a current/voltage relationship is often plotted (an I/V curve).
-* According to Ohm’s Law, Ih will vary inversely with Rm. When Rm is very high, small currents can swing the cell by large voltages. Conversely, the same voltage swing takes less current to achieve.
+> 💡 This property describes features of the experimental equipment and not the neuron itself.
 
-### Membrane Resistance (Rm)
-* Indicates how resistive the neural membrane is to the flow of ions.
-* Relates to the number of open channels in the neural membrane (the more open channels, the lower the Rm)
-* Conductance is the inverse of resistance. A membrane with low Rm has high conductance. 
-* Rm varies with voltage (due to the electrostatic gradient of ions and opening/closing of voltage-gated ion channels). If a neuron is said to have a given Rm, it is often implied that is the Rm at -70 mV.
+Electrical measurements of patch-clamped neurons are performed through the very small opening at the tip of the pipette. The opening is small enough that it poses some resistance to current, and if the tip gets clogged with debris the resistance will increase a large amount. The measurement of resistance through the tip is called **access resistance** (R<sub>a</sub>). Access resistance may be monitored frequently during long recordings to evaluate the quality of the patch pipette throughout the experiment.
 
-### Access Resistance (Ra)
-* Indicates the resistance between the recording pipette and the neuron.
-* The primary source of access resistance is the resistance of the narrowest part of the pipette (the tip).
-* Experimenters seek to keep Ra low (discarding all data from cells with Ra is large or unstable).
-* A primary cause of high Ra is clogging of the recording pipette tip.
-* Access resistance (Ra) is used called series resistance (Rs) in the literature.
+## Voltage-Clamp Time Constant (τ)
 
-### Capacitance (Cm)
-* Indicates the size of the neural membrane (a good indicator of soma size)
-* Large neurons have a high capacitance
-* Neurons of similar size and phenotype are expected to have similar capacitance
+> 💡 This property describes features of the experimental equipment and not the neuron itself.
 
-> 🤓 **Nerd Alert:** Tau (τ) also appears in the list of membrane properties, but it’s just used to calculate Cm so you don’t need to worry about it. Tau is the time constant of an exponential decay curve used to calculate capacitance (Cm = τ/Rm). In practice the calculation is more advanced, as discussed in the subsequent section about the membrane test.
+When voltage-clamp experiments attempt to rapidly step a neuron from one voltage to another, the cell's actual voltage does not change immediately. There is a limitation in how fast the patch-clamp amplifier can move the voltage of the cell, largely determined by access resistance (R<sub>a</sub>) and cell capacitance (C<sub>m</sub>). The rate at which a voltage-clamp amplifier can move the voltage of a cell is described by the time constant **tau** (τ) which is typically a few milliseconds. The value of τ is approximately C<sub>m</sub>/R<sub>m</sub>, but the [Exploring the Voltage-Clamp Membrane Test](https://swharden.com/blog/2020-10-11-model-neuron-ltspice/) page offers a more thorough discussion.

@@ -8,8 +8,8 @@
 
   <!-- Styling -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-  <link rel=stylesheet href="{{ .Site.BaseURL }}/css/github.css?v=7">
-  <link rel=stylesheet href="{{ .Site.BaseURL }}/css/style.css?v=7">
+  <link rel=stylesheet href="{{ .Site.BaseURL }}/css/github.css?v=9">
+  <link rel=stylesheet href="{{ .Site.BaseURL }}/css/style.css?v=9">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SCHN885L9"></script>
@@ -46,12 +46,64 @@
   <meta name="twitter:image" content="{{ .Site.BaseURL }}/img/og.png">
 </head>
 
-<body class="">
+<body class="m-0 p-0">
 
-  <main class="container mb-5" style="max-width: 1000px;">
-    {{ block "main" . }}
-    {{ end }}
+  <header class="text-light" style="background-color: #20558a;">
+    <div class="container limit-width py-3">
+      <div class="fs-1">{{ $.Title }}</div>
+      <div class="fs-5 fw-light">{{ .Param "description" }}</div>
+    </div>
+  </header>
+
+  {{ if not .IsHome }}
+  <nav class="bg-light border-bottom">
+    <div class="container limit-width py-2">
+      <a href="{{ .Site.BaseURL }}">
+        The Patch Guide
+      </a>
+
+      {{ if or .IsSection .IsPage }}
+      <span>»</span>
+      <a href="{{ (site.GetPage .Section).Permalink }}">
+        {{ (site.GetPage .Section).Title }}
+      </a>
+      {{ end }}
+
+      {{ if .IsPage }}
+      <span>»</span>
+      <a href='{{ .Permalink }}'>
+        {{ .Title }}
+      </a>
+      {{ end }}
+    </div>
+  </nav>
+  {{ end }}
+
+  <main class="bg-white">
+    <div class="container limit-width pb-5">
+      <article class="my-4">
+        {{ block "main" . }}
+        {{ end }}
+      </article>
+    </div>
   </main>
+
+  <footer class="py-4 border-top">
+    <div class="container limit-width text-end">
+
+      <div class="d-flex justify-content-between">
+        <div style="opacity: .5;">
+          Copyright {{ now.Format "2006" }} <a href='https://github.com/swharden' class="text-dark">@swharden</a>
+        </div>
+        <div>
+          <a href="https://github.com/swharden/patch">
+            <img class="github-edit-button" src="/patch/img/github-edit.svg" />
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"

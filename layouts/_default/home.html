@@ -1,35 +1,23 @@
 {{ define "main" }}
 
-<header class="mb-4 pt-2 pb-3 rounded text-light text-center my-4" style="background-color: #20558a">
-  <div class="fs-1">{{ $.Title }}</div>
-  <div class="fs-5 fw-light">{{ .Param "description" }}</div>
-</header>
+<hr style="opacity: 0;" />
 
-<main>
-  {{ range $sectionPage := .Site.Sections }}
+{{ range $sectionPage := .Site.Sections }}
 
-  <div class="fs-4 lh-1 pt-3">
-    <a href="{{$sectionPage.Permalink}}" class="text-dark">
-      {{$sectionPage.Title}}
-    </a>
-  </div>
-  <div class="mb-2">{{$sectionPage.Description}}</div>
+<div class="fs-4 lh-1 pt-3">
+  <a href="{{$sectionPage.Permalink}}" class="text-dark">
+    {{$sectionPage.Title}}
+  </a>
+</div>
+<div class="mb-2">{{$sectionPage.Description}}</div>
 
-  <ul class="pb-2">
-    {{ $pagesInSection := where (where .Site.Pages "Section"
-    $sectionPage.Section) ".IsSection" "==" false }} {{ range $pagesInSection }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a> - {{.Description}}</li>
-    {{ end }}
-  </ul>
-
+<ul class="pb-2">
+  {{ $pagesInSection := where (where .Site.Pages "Section"
+  $sectionPage.Section) ".IsSection" "==" false }} {{ range $pagesInSection }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a> - {{.Description}}</li>
   {{ end }}
+</ul>
 
-  <footer>
-    <div class="container mt-5 mb-3 text-end" style="max-width: 1000px">
-      <a href="https://github.com/swharden/patch">
-        <img class="github-edit-button" src="/patch/img/github-edit.svg" />
-      </a>
-    </div>
-  </footer>
-</main>
+{{ end }}
+
 {{ end }}

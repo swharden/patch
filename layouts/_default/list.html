@@ -1,16 +1,5 @@
 {{ define "main" }}
 
-<nav class="pt-3">
-    <a href="{{ .Site.BaseURL }}">The Patch Guide</a>
-    <span>»</span>
-    <a href="{{ (site.GetPage .Section).Permalink }}">{{ (site.GetPage .Section).Title }}</a>
-</nav>
-
-<header class="my-4 p-2 rounded text-light text-center" style="background-color: #20558a;">
-    <div class="fs-1">{{ .Title }}</div>
-    <div class="fs-5 fw-light pb-1">{{ .Description }}</div>
-</header>
-
 <article class="mt-3">
     {{.Content}}
     <ul class="lh-lg">
@@ -23,11 +12,4 @@
     </ul>
 </article>
 
-<footer>
-    <div class="container mt-5 mb-3 text-end" style="max-width: 1000px">
-        <a href="https://github.com/swharden/patch">
-            <img class="github-edit-button" src="/patch/img/github-edit.svg" />
-        </a>
-    </div>
-</footer>
 {{ end }}

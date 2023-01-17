@@ -14,3 +14,7 @@ code {
     background: #EEEEEE;
     padding: 0em .25em;
 }
+
+.limit-width {
+    max-width: 1000px;
+}

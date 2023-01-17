@@ -1,63 +1,40 @@
 {{ define "main" }}
 
-<nav class="pt-2">
-    <a href="{{ .Site.BaseURL }}">The Patch Guide</a>
-    <span>»</span>
-    <a href="{{ (site.GetPage .Section).Permalink }}">{{ (site.GetPage .Section).Title }}</a>
-    <span>»</span>
-    <a href='{{ .Permalink }}'>{{ .Title }}</a>
-</nav>
+{{ .Content | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `<a href="#${2}">${1}</a> ${3}` | safeHTML }}
 
-<article>
-    <header class="my-4 p-2 rounded text-light text-center" style="background-color: #20558a;">
-        <div class="fs-1">{{ $.Title }}</div>
-        <div class="fs-5 fw-light pb-1">{{ .Param "description" }}</div>
-    </header>
-    {{ .Content | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `<a href="#${2}">${1}</a> ${3}` | safeHTML
-        }}
-</article>
-
-<footer>
-    <div class="d-flex justify-content-between mt-5">
-        {{ if .NextInSection }}
-        <div class="text-center">
-            <div>Previous</div>
-            <div>
-                <a href="{{.NextInSection.Permalink}}" class="btn btn-primary">
-                    {{.NextInSection.Title}}
-                </a>
+    <nav>
+        <div class="d-flex justify-content-between mt-5">
+            {{ if .NextInSection }}
+            <div class="text-center">
+                <div>Previous</div>
+                <div>
+                    <a href="{{.NextInSection.Permalink}}" class="btn btn-primary">
+                        {{.NextInSection.Title}}
+                    </a>
+                </div>
             </div>
-        </div>
-        {{ end }}
+            {{ end }}
 
-        <div>
-            <div class="text-center">&nbsp;</div>
             <div>
-                <a href="{{ .Site.BaseURL }}" class="btn btn-secondary">
-                    Home
-                </a>
+                <div class="text-center">&nbsp;</div>
+                <div>
+                    <a href="{{ .Site.BaseURL }}" class="btn btn-secondary">
+                        Home
+                    </a>
+                </div>
             </div>
-        </div>
 
-        {{ if .PrevInSection }}
-        <div>
-            <div class="text-center">Next</div>
+            {{ if .PrevInSection }}
             <div>
-                <a href="{{.PrevInSection.Permalink}}" class="btn btn-primary">
-                    {{.PrevInSection.Title}}
-                </a>
+                <div class="text-center">Next</div>
+                <div>
+                    <a href="{{.PrevInSection.Permalink}}" class="btn btn-primary">
+                        {{.PrevInSection.Title}}
+                    </a>
+                </div>
             </div>
+            {{ end }}
         </div>
-        {{ end }}
-    </div>
-</footer>
+    </nav>
 
-<footer>
-    <div class="container mt-5 mb-3 text-end" style="max-width: 1000px">
-        <a href="https://github.com/swharden/patch/blob/main/content/{{ path.Clean .File.Path }}">
-            <img class="github-edit-button" src="/patch/img/github-edit.svg" />
-        </a>
-    </div>
-</footer>
-
-{{ end }}
+    {{ end }}

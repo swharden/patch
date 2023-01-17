@@ -102,3 +102,14 @@ h4 a:hover {
     color: black;
     text-decoration: underline;
 }
+
+/* GitHub icons */
+
+.github-edit-button {
+    opacity: .5;
+    height: 30px;
+}
+
+.github-edit-button:hover {
+    opacity: 1;
+}

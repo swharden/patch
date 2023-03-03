@@ -1,22 +1,18 @@
 ---
-title: Single-Channel Fluorescent Analysis with ImageJ and Excel
-description: How to calculate ΔF/F₀ from time series fluorescence images with ImageJ and Excel
+title: Fluorescence Analysis with ImageJ and Excel
+description: How to calculate ΔF/F₀ from a series of fluorescence images
 weight: 20
 ---
 
-This page describes how to analyze fluorescence intensity (ΔF/F₀) from a time series stack of images using [ImageJ (Fiji)](https://fiji.sc/) and Excel. While semi-automated custom tools are often used to facilitate rapid analysis of fluorescence data, there is great value in understanding how to realize these analyses using standard and commonly-available software.
+**This page describes how to analyze fluorescence intensity (ΔF/F₀) from a series of images using ImageJ and Excel.** While semi-automated custom tools are often used to facilitate rapid analysis of fluorescence data, there is great value in understanding how to realize these analyses using standard and commonly-available software.
 
 <a href="xmlroi.png">
 <img src="xmlroi.png" class="img-fluid d-block w-75 mx-auto my-5 border shadow">
 </a>
 
 ## Measure ROI Fluorescence
-* Load all images by dragging/dropping the XML file (in the T-Series folder) onto ImageJ
-  * ensure ALL checkboxes are unchecked
-  * the stack viewing mode should be _Hyperstack_
-  * the color mode should be _Grayscale_
-  * to make loading, you can save the image as a single TIF and reload that TIF in the future
-  * the image will have two scroll bars at the bottom. The upper one is for _channel_ and the lower one is for _time_.
+* Install [ImageJ (Fiji)](https://fiji.sc/)
+* Drag/drop a folder of images onto ImageJ to open all images as a stack
 * Create a maximum projection (of either channel) to make drawing of ROIs easy. **Image > Stack > Z project** and select _Average_ (not maximum projection!)
   * do all ROI creation on the projection. You can later use these same ROIs on the original data.
 * Click **analyze > tools > ROI manager** _(ROI means "region of interest")_
@@ -47,7 +43,13 @@ Single-channel fluorescence experiments report the change in fluorescence (`ΔF`
 
 * Calculate `ΔF/F₀` by dividing `ΔF` values by `F₀`
 
+<a href="excel.jpg">
+<img src="excel.jpg" class="img-fluid d-block w-75 mx-auto my-5">
+</a>
+
 ## Calculate Ratiometric ΔF/F
+
+The following describes how to measure ratiometric fluorescence from a series of 2D multi-channel images. See [Ratiometric Linescan Analysis with ImageJ and Excel](../linescan) for information specific to analyzing ratiometric linescan images.
 
 Two-channel fluorescence experiments report ΔF/F as the change in one fluorophore relative to another. In this example we will use `G` to represent a calcium-sensitive fluorophore and report the change in its fluorescence relative to a calcium-insensitive fluorophore `R`. In this example `G/R` is measured for each ROI in every time point. The following steps are performed for each ROI.
 
@@ -58,18 +60,3 @@ In this case `F` represents `G/R` so `ΔF/F` is: `[Δ(G/R)]/(G/R)₀`
 * Calculate `Δ(G/R)` by subtracting `(G/R)₀` from every `(G/R)` value
 
 * Calculate `ΔF/F` by dividing `Δ(G/R)` values by `(G/R)₀`
-
-## Resources
-
-* [ROI Analysis Pipeline](https://github.com/swharden/ROI-Analysis-Pipeline/) (GitHub) is a collection of software tools for analyzing fluorescence images
-
-* [ScanAGator](https://github.com/swharden/ScanAGator) (GitHub) is a tool that facilitates analysis of ΔF/F from ratiometric linescan images
-
-
-<a href="excel.jpg">
-<img src="excel.jpg" class="img-fluid d-block w-75 mx-auto my-5">
-</a>
-
-<a href="tseries.jpg">
-<img src="tseries.jpg" class="img-fluid d-block w-75 mx-auto my-5">
-</a>

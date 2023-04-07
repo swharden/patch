@@ -3,11 +3,11 @@ title: Preamp Blade Setup
 description: How to configure and switch between different preamplifier blades
 ---
 
-## Different Blades
+A _preamplifier blade_ is a circuit board that amplifies voltage from PMTs and provides a low impedance signal suitable to send through a long cable run to the GPIO box.
 
-Old blades (white BNC connectors) work better for galvo/galvo imaging (brighter)
+* Old blades (white BNC connectors) work better for galvo/galvo imaging (brighter)
 
-New blades (black BNC connectors) work better for galvo/resonant imaging (brighter and less streaking)
+* New blades (black BNC connectors) work better for galvo/resonant imaging (brighter and less streaking)
 
 ## Changing Blades (Hardware)
 

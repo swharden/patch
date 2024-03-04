@@ -42,6 +42,13 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: "./public"
-      - name: 🚀 Deploy Site
+      - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+      - name: 🔑 Load SSH Key
+        run: |
+          install -m 600 -D /dev/null ~/.ssh/id_rsa
+          echo "${{ secrets.PRIVATE_SSH_KEY }}" > ~/.ssh/id_rsa
+      - name: 🚀 Deploy to Website
+        run: rsync --archive --stats -e 'ssh -p 18765 -o StrictHostKeyChecking=no' public/ swharden.com@ssh.swharden.com:~/www/swharden.com/public_html/patch/
+      

@@ -87,13 +87,24 @@
     </div>
   </main>
 
-  <footer class="py-4 border-top">
+  <footer class="py-4 border-top bg-light">
     <div class="container limit-width text-end">
 
       <div class="d-flex justify-content-between">
-        <div style="opacity: .5;">
-          Copyright {{ now.Format "2006" }} <a href='https://github.com/swharden' class="text-dark">@swharden</a>
+
+        <div class="text-start text-muted">
+          <div>
+            Copyright {{ now.Format "2006" }} <a href='https://github.com/swharden' class="text-dark">@swharden</a>
+          </div>
+          <div>
+            Built with Hugo {{ .Site.Hugo.Version }}
+          </div>
+          <div>
+            {{ time now | time.Format ":date_long" }}
+            at {{ time now "America/New_York" | time.Format ":time_short" }} EST
+          </div>
         </div>
+
         <div>
           <a href="https://github.com/swharden/patch">
             <img class="github-edit-button" src="/patch/img/github-edit.svg" />

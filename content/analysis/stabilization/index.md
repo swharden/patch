@@ -17,7 +17,9 @@ I find TurboReg/StackReg to be reliably superior to other ImageJ alignment plugi
 
 **TurboReg** is an ImageJ plugin for aligning images using a subpixel registration algorithm described by [Thévenaz et al., 1998](https://ieeexplore.ieee.org/document/650848). StackReg is an ImageJ plugin that applies TurboReg alignment to stacks. 
 
-**Download:** [StackReg](http://bigwww.epfl.ch/thevenaz/stackreg/) (requires [TurboReg](http://bigwww.epfl.ch/thevenaz/turboreg/))
+**Download:** 
+* Raw ImageJ: [StackReg](http://bigwww.epfl.ch/thevenaz/stackreg/) (requires [TurboReg](http://bigwww.epfl.ch/thevenaz/turboreg/))
+* Fiji: use the [BIG-EPFL update tool](https://imagej.net/update-sites/big-epfl)
 
 **Launch:** Plugins > StackReg
 

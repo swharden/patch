@@ -19,7 +19,7 @@ I find TurboReg/StackReg to be reliably superior to other ImageJ alignment plugi
 
 **Download:** 
 * Raw ImageJ: [StackReg](http://bigwww.epfl.ch/thevenaz/stackreg/) (requires [TurboReg](http://bigwww.epfl.ch/thevenaz/turboreg/))
-* Fiji: use the [BIG-EPFL update tool](https://imagej.net/update-sites/big-epfl)
+* Fiji: use the [BIG-EPFL update tool](https://imagej.net/update-sites/big-epfl), then it will be in `Plugins` > `Registration` > `StackReg`
 
 **Launch:** Plugins > StackReg
 

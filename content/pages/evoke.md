@@ -17,9 +17,9 @@ So far, we have discussed spontaneous EPSCs and IPSCs in detail. However, there 
 
 ## Paired Pulse
 
-<img src="evoke-dic.png" class="img-fluid w-75 border shadow mx-auto d-block my-5">
+<img src="/patch/img/pages/evoke/evoke-dic.png" class="img-fluid w-75 border shadow mx-auto d-block my-5">
 
-<img src="evoke-paired-pulse.png" class="img-fluid my-5">
+<img src="/patch/img/pages/evoke/evoke-paired-pulse.png" class="img-fluid my-5">
 
 Electrical Paired Pulse Stimulation. Two electrical stimuli (identified by the presence of a stimulus artifact) evoke two inward currents. Compared to baseline (dark trace), the addition of drug (light trace) increased the amplitude of both pulses without changing the paired pulse ratio.
 
@@ -44,4 +44,4 @@ To excite an extremely large field, concentric bipolar stimulators may be used. 
 
 The purpose of the stimulus isolator is to allow the patch-clamp system to deliver high voltage to the electrode. The current of the stimulator is set with the knob on the top right of the stimulus isolation unit. According to Ohm’s Law, the voltage the stimulator will produce when triggered is a function of the current (set by the knob) and the resistance (a function of the type of stimulator being used). Although there is a “unipolar/bipolar” switch, but unipolar should virtually always be selected. There is a “polarity select” button, which can be toggled to invert the polarity of the outputs. The preferred output polarity is that which produces the cleanest waveform on the recorder and should be determined at recording time by the experimenter. Often, one polarity will be more effective at reliably stimulating a slice than the other. 
 
-<img src="siu.png" class="img-fluid my-5 w-75 d-block mx-auto">
+<img src="/patch/img/pages/evoke/siu.png" class="img-fluid my-5 w-75 d-block mx-auto">

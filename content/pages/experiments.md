@@ -11,20 +11,20 @@ We often use the term **protocol** to describe the set of instructions a patch-c
 
 The membrane test protocol is a 40 sweep voltage-clamp protocol which rapidly steps between two voltages. From this protocol, many passive membrane properties can be determined: steady state current (Is), membrane resistance (Rm), access resistance (Ra), and capacitance (Cm).
 
-<img src="memtest.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/memtest.png" class="img-fluid d-block mx-auto my-5 w-75">
 
 ## Repeated Membrane Test
 
 One of the most common experiments records a membrane test repeatedly as a drug is applied, and passive properties (Ih, Rm, Ra, and Cm) are continuously assessed. What each of these features mean is described in the previous chapter on membrane tests.
 Many advanced experiments (studying spontaneous sIPSC/sEPSCs, I/V ramps, evoked synaptic currents, etc.) include a voltage clamp step at the start of every sweep. A membrane test analysis similar to the one displayed here can be performed on any voltage-clamp sweep with a square pulse voltage step in it, so you will find most voltage-clamp experiments contain this voltage step at the beginning of every sweep.
 
-<img src="memtest2.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/memtest2.png" class="img-fluid d-block mx-auto my-5 w-75">
 
 ## I/V Curves
 
 These protocols use fast voltage steps (0202) and slower voltage ramps (0203) to investigate current/voltage relationships in neurons. The voltage step protocol is best for revealing fast voltage-dependent current transients (e.g., visualizing an excitatory current due to a hyperpolarization-activated channel). While the purpose of voltage steps is to maximize transient currents, the purpose of voltage ramps is the opposite – minimizing transients to produce the smoothest sweeps ideal for averaging to create an I/V plot.
 
-<img src="iv.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/iv.png" class="img-fluid d-block mx-auto my-5 w-75">
 
 ## AP Ramp
 
@@ -40,13 +40,13 @@ Commonly reported AP properties include:
 
 - **Half-width (ms)** – the width of the AP (in time units). Since APs are triangular shaped (wider at the base than the top), this width is measured half-way between the base of the AP and its peak (hence the term half-width).
 
-<img src="ap-ramp.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/ap-ramp.png" class="img-fluid d-block mx-auto my-5 w-75">
 
 ## AP Step
 
 We saw earlier that injection of excitatory current through the patch pipette can produce action potentials. The plot where AP frequency is plotted against the current applied is called an AP gain curve and can be used to distinguish different classes of neurons.
 
-<img src="ap-step.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/ap-step.png" class="img-fluid d-block mx-auto my-5 w-75">
 
 ## Spontaneous Synaptic Currents
 
@@ -54,12 +54,12 @@ Spontaneous excitatory and inhibitory synaptic currents can be visualized in vol
 
 Baseline (basal sEPSC Frequency)
 
-<img src="synaptic-before.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/synaptic-before.png" class="img-fluid d-block mx-auto my-5 w-75">
 
 Drug (increased sEPSC Frequency)
 
-<img src="synaptic-after.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/synaptic-after.png" class="img-fluid d-block mx-auto my-5 w-75">
 
 Analysis (sEPSC Frequency over time)
 
-<img src="ipsc-frequency.png" class="img-fluid d-block mx-auto my-5 w-75">
+<img src="/patch/img/pages/experiments/ipsc-frequency.png" class="img-fluid d-block mx-auto my-5 w-75">

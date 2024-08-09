@@ -13,7 +13,7 @@ This page outlines how to improve electrophysiological containing 60 Hz noise. N
 
 - **convert data into time domain with iFFT** - this will output your smoothed trace and you're done.
 
-<img src="noise-reduction.png" class="img-fluid">
+<img src="/patch/img/analysis/noise/noise-reduction.png" class="img-fluid">
 
 ## Python Example
 
@@ -59,4 +59,4 @@ plt.show()
 
 Plotting the raw frequency component and highlighting 60 Hz and every third harmonic, it becomes evident that not every odd harmonic is an offender. I could selectively silence just the bad ones, but it doesn't make a huge difference as compared to just silencing all of them.
 
-<img src="noise-freq.png" class="img-fluid">
+<img src="/patch/img/analysis/noise/noise-freq.png" class="img-fluid">

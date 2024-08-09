@@ -24,21 +24,21 @@ description: How to add scale bars to microscope images using a ruler slide
 
 Apply an aggressive unsharp mask to maximally sharpen edges
 
-<img src="step1.png" class="img-fluid my-5">
+<img src="/patch/img/analysis/scale/step1.png" class="img-fluid my-5">
 
 Perform corner-to-corner measurement
 
-<img src="step2.png" class="img-fluid my-5">
+<img src="/patch/img/analysis/scale/step2.png" class="img-fluid my-5">
 
 Scalebars can be burned-in
 
-<img src="step3.png" class="img-fluid my-5">
+<img src="/patch/img/analysis/scale/step3.png" class="img-fluid my-5">
 
 ### Example Calculations
 
 10x|40x
 ---|---
-<img src="cal10.png" class="img-fluid">|<img src="cal40.png" class="img-fluid">
+<img src="/patch/img/analysis/scale/cal10.png" class="img-fluid">|<img src="cal40.png" class="img-fluid">
 
 ## Scaling unscaled images
 

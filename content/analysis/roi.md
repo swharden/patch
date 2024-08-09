@@ -6,8 +6,8 @@ weight: 20
 
 **This page describes how to analyze fluorescence intensity (ΔF/F₀) from a series of images using ImageJ and Excel.** While semi-automated custom tools are often used to facilitate rapid analysis of fluorescence data, there is great value in understanding how to realize these analyses using standard and commonly-available software.
 
-<a href="xmlroi.png">
-<img src="xmlroi.png" class="img-fluid d-block w-75 mx-auto my-5 border shadow">
+<a href="/patch/img/analysis/roi/xmlroi.png">
+<img src="/patch/img/analysis/roi/xmlroi.png" class="img-fluid d-block w-75 mx-auto my-5 border shadow">
 </a>
 
 ## Measure ROI Fluorescence
@@ -29,8 +29,8 @@ weight: 20
   * Excel 2016 may not be able to open the .xls file. You may have to rename it to .tsv (short for tab-separated values) and drag/drop it into a blank excel worksheet.
 * Once the data is in excel, add a "time" column and populate its values appropriately 
 
-<a href="rois.jpg">
-<img src="rois.jpg" class="img-fluid d-block w-75 mx-auto my-5">
+<a href="/patch/img/analysis/roi/rois.jpg">
+<img src="/patch/img/analysis/roi/rois.jpg" class="img-fluid d-block w-75 mx-auto my-5">
 </a>
 
 ## Calculate Single-Channel ΔF/F₀
@@ -43,8 +43,8 @@ Single-channel fluorescence experiments report the change in fluorescence (`ΔF`
 
 * Calculate `ΔF/F₀` by dividing `ΔF` values by `F₀`
 
-<a href="excel.jpg">
-<img src="excel.jpg" class="img-fluid d-block w-75 mx-auto my-5">
+<a href="/patch/img/analysis/roi/excel.jpg">
+<img src="/patch/img/analysis/roi/excel.jpg" class="img-fluid d-block w-75 mx-auto my-5">
 </a>
 
 ## Calculate Ratiometric ΔF/F

@@ -13,7 +13,7 @@ Consider this voltage-clamp experiment that adds a drug that changes holding cur
 
 Raw Trace | Mean Current
 ---|---
-<img src="a.png" class="img-fluid">|<img src="b.png" class="img-fluid">
+<img src="/patch/img/analysis/tonic-phasic/a.png" class="img-fluid">|<img src="/patch/img/analysis/tonic-phasic/b.png" class="img-fluid">
 
 </div>
 
@@ -27,7 +27,7 @@ Raw Trace | Mean Current
 
 Raw Trace With Synaptic Currents | Raw Trace Without Synaptic Currents
 ---|---
-<img src="raw-15.png" class="img-fluid">|<img src="raw-134.png" class="img-fluid">
+<img src="/patch/img/analysis/tonic-phasic/raw-15.png" class="img-fluid">|<img src="/patch/img/analysis/tonic-phasic/raw-134.png" class="img-fluid">
 
 </div>
 
@@ -37,7 +37,7 @@ Raw Trace With Synaptic Currents | Raw Trace Without Synaptic Currents
 
 Histogram With Synaptic Currents | Histogram Without Synaptic Currents
 ---|---
-<img src="hist-15.png" class="img-fluid">|<img src="hist-134.png" class="img-fluid">
+<img src="/patch/img/analysis/tonic-phasic/hist-15.png" class="img-fluid">|<img src="/patch/img/analysis/tonic-phasic/hist-134.png" class="img-fluid">
 
 </div>
 
@@ -49,7 +49,7 @@ Histogram With Synaptic Currents | Histogram Without Synaptic Currents
 
 Raw Trace | Fitted Histograms
 ---|---
-<img src="a.png" class="img-fluid">|<img src="c.png" class="img-fluid">
+<img src="/patch/img/analysis/tonic-phasic/a.png" class="img-fluid">|<img src="/patch/img/analysis/tonic-phasic/c.png" class="img-fluid">
 
 </div>
 
@@ -78,7 +78,7 @@ Although this allows improved quantification of isolated _phasic_ currents, this
 
 Drift Subtraction | Fitted Histogram
 ---|---
-<a href="baseline.png"><img src="baseline.png" class="img-fluid"></a>|<a href="baseline2.png"><img src="baseline2.png" class="img-fluid"></a>
+<img src="/patch/img/analysis/tonic-phasic/baseline.png" class="img-fluid">|<img src="/patch/img/analysis/tonic-phasic/baseline2.png" class="img-fluid">
 
 </div>
 
@@ -90,7 +90,7 @@ In conditions with extremely large and frequent spontaneous currents, an improve
 
 Segment Noise Measurement | Segments Sorted by Noise
 ---|---
-<a href="noise1.png"><img src="noise1.png" class="img-fluid"></a>|<a href="noise2.png"><img src="noise2.png" class="img-fluid"></a>
+<img src="/patch/img/analysis/tonic-phasic/noise1.png" class="img-fluid">|<img src="/patch/img/analysis/tonic-phasic/noise2.png" class="img-fluid">
 
 </div>
 
@@ -99,7 +99,7 @@ Segment Noise Measurement | Segments Sorted by Noise
 
 Histogram by Noise Percentile | Fitted Histogram by Noise Percentile
 ---|---
-<a href="percentile1.png"><img src="percentile1.png" class="img-fluid"></a>|<a href="percentile2.png"><img src="percentile2.png" class="img-fluid"></a>
+<img src="/patch/img/analysis/tonic-phasic/percentile1.png" class="img-fluid">|<img src="/patch/img/analysis/tonic-phasic/percentile2.png" class="img-fluid">
 
 </div>
 

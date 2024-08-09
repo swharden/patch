@@ -6,8 +6,8 @@ weight: 10
 
 This page describes how to analyze fluorescence intensity (ΔF/F₀) from a ratiometric linescan using [ImageJ (Fiji)](https://fiji.sc/) and Excel. While semi-automated custom tools are often used to facilitate rapid analysis of fluorescence data, there is great value in understanding how to realize these analyses using standard and commonly-available software.
 
-<a href="imagej-linescan.png">
-<img src="imagej-linescan.png" class="img-fluid w-75 mx-auto d-block my-5">
+<a href="/patch/img/analysis/linescan/imagej-linescan.png">
+<img src="/patch/img/analysis/linescan/imagej-linescan.png" class="img-fluid w-75 mx-auto d-block my-5">
 </a>
 
 ## Measure Fluorescence with ImageJ
@@ -36,19 +36,19 @@ In this case `F` represents `G/R` so `ΔF/F` is: `[Δ(G/R)]/(G/R)₀`
 
 * Calculate `ΔF/F` by dividing `Δ(G/R)` values by `(G/R)₀`
 
-<a href="excel-linescan.png">
-<img src="excel-linescan.png" class="img-fluid shadow w-75 mx-auto d-block my-5">
+<a href="/patch/img/analysis/linescan/excel-linescan.png">
+<img src="/patch/img/analysis/linescan/excel-linescan.png" class="img-fluid shadow w-75 mx-auto d-block my-5">
 </a>
 
 ## Sample Data
 
-This excel file: [linescan.xlsx](linescan.xlsx)
+This excel file: [linescan.xlsx](/patch/img/analysis/linescan/linescan.xlsx)
 
 Images analyzed:
 
 Green | Red
 ---|---
-![](G.png)|![](R.png)
+![](/patch/img/analysis/linescan/G.png)|![](/patch/img/analysis/linescan/R.png)
 
 ## Resources
 

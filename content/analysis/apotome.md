@@ -6,8 +6,8 @@ description: How to use ImageJ to remove ApoTome artifacts using FFT/iFFT
 The [Zeiss ApoTome](http://zeiss-campus.magnet.fsu.edu/tutorials/opticalsectioning/apotome/indexflash.html) is an optical instrument which can be placed in the light path of a traditional epifluorescence microscope to reduce out-of-focus light and enhance optional sectioning. This is achieved by illuminating the specimen through a rapidly tilting a glass plate with a grid on it and analyzing the resulting image in real time to create an image which maximally excites and captures light at a single optical section (calculated from at least 3 raw images acquired at different tilt angles).
 
 <div class="text-center">
-    <img src="apotome-scope.jpg" class="m-3">
-    <img src="apotome-device.png" class="m-3">
+    <img src="/patch/img/analysis/apotome/apotome-scope.jpg" class="m-3">
+    <img src="/patch/img/analysis/apotome/apotome-device.png" class="m-3">
 </div>
 
 A poorly-calibrated ApoTome will produce imaging artifacts which appear as horizontal lines on the final image (in addition to increased collection of out-of-focus light). The ApoTome must be calibrated separately for every filter cube / lens combination. An ApoTome on a microscope with 4 filter cubes and 5 lenses must be calibrated 20 times. Calibration is a two-step process, requiring phase calibration and a grid calibration. See [Imaging Associates - ApoTome Calibration Guide](http://www.usask.ca/biology/scopes/ApoTome%20Takeoff%20Guide%20%28calibration%29.pdf).
@@ -17,10 +17,10 @@ Although ApoTome artifact lines can be reduced by improving calibration, images 
 <div class="text-center">
 
 ### Image with ApoTome artifacts 
-<img src="apotome_artifacts.png" class="img-fluid shadow"> 
+<img src="/patch/img/analysis/apotome/apotome_artifacts.png" class="img-fluid shadow"> 
 
 ### Same image corrected with ImageJ
-<img src="apotome_corrected.png" class="img-fluid shadow">
+<img src="/patch/img/analysis/apotome/apotome_corrected.png" class="img-fluid shadow">
 
 </div>
 
@@ -42,16 +42,16 @@ Although ApoTome artifact lines can be reduced by improving calibration, images 
 <div class="text-center">
 
 ### Original
-<img src="before.png" class="img-fluid w-50 d-inline mx-auto shadow">
+<img src="/patch/img/analysis/apotome/before.png" class="img-fluid w-50 d-inline mx-auto shadow">
 
 ### FFT
-<img src="fft-sel.png" class="img-fluid w-50 d-inline mx-auto shadow">
+<img src="/patch/img/analysis/apotome/fft-sel.png" class="img-fluid w-50 d-inline mx-auto shadow">
 
 ### FFT with blanks
-<img src="fft-black.png" class="img-fluid w-50 d-inline mx-auto shadow">
+<img src="/patch/img/analysis/apotome/fft-black.png" class="img-fluid w-50 d-inline mx-auto shadow">
 
 ### Inverse FFT
-<img src="after.png" class="img-fluid w-50 d-inline mx-auto shadow">
+<img src="/patch/img/analysis/apotome/after.png" class="img-fluid w-50 d-inline mx-auto shadow">
 
 </div>
 

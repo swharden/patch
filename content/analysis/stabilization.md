@@ -9,7 +9,7 @@ description: How to correct for motion in time-series 2D and 3D images
 
 Original | TurboReg | Descriptor | Correct2D | MoCo
 ---|---|---|---|---
-![](sample.gif)|![](stabilized.gif)|![](stabilized2.gif)|![](stabilized3.gif)|![](stabilized3.gif)
+![](/patch/img/analysis/stabilization/sample.gif)|![](/patch/img/analysis/stabilization/stabilized.gif)|![](/patch/img/analysis/stabilization/stabilized2.gif)|![](/patch/img/analysis/stabilization/stabilized3.gif)|![](/patch/img/analysis/stabilization/stabilized3.gif)
 
 I find TurboReg/StackReg to be reliably superior to other ImageJ alignment plugins.
 

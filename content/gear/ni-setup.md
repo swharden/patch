@@ -23,11 +23,12 @@ Sometimes a Windows update will mess-up the NI device list. If PrairieView won't
 * add each of the 3 devices
 * ensure your configuration is identical to that shown here
 
-<img src="ni.jpg" class="mx-auto d-block my-5" style="max-width: 100%">
+<img src="/patch/img/gear/ni-setup/ni.jpg" class="mx-auto d-block my-5" style="max-width: 100%">
 
 ## Update 2020-12-07
 PrairieView would not image and gave error in DAQmxErrors.log
-```
+
+```txt
 Status Code: -200478[12/07/2020 16:59:15] Device cannot be accessed.  
 
 Possible causes:

@@ -15,7 +15,7 @@ A filter must be manually changed in the headstage to control whether the tunabl
 
 Filters | Placement
 ---|---
-<img src="images/filter-pair.png" class="img-fluid">|<img src="images/filter-placement.png" class="img-fluid">
+<img src="/patch/img/gear/uncaging/filter-pair.png" class="img-fluid">|<img src="/patch/img/gear/uncaging/filter-placement.png" class="img-fluid">
 
 ## Alignment and Calibration
 
@@ -31,7 +31,7 @@ In order to take a picture using one laser and laser-uncage at a single point on
 * Dwell time should be `7.2` µs
 * Calibrate using the same lens and optical zoom you intend to use for experiments
 
-<img src="images/x3-control.png" class="d-block mx-auto shadow my-5 img-fluid">
+<img src="/patch/img/gear/uncaging/x3-control.png" class="d-block mx-auto shadow my-5 img-fluid">
 
 
 ### Load a Fluorescent Chip
@@ -40,13 +40,13 @@ Calibration is required between brain slices, and a fluorescent chip cut from a 
 
 Chip Storage | Chip Placement
 ---|---
-<img src="images/plastic-storage.png" class="img-fluid">|<img src="images/plastic-light.png" class="img-fluid">
+<img src="/patch/img/gear/uncaging/plastic-storage.png" class="img-fluid">|<img src="/patch/img/gear/uncaging/plastic-light.png" class="img-fluid">
 
 * Use DIC optics to focus the microscope onto the surface of the fluorescent piece of plastic. 
 * The surface of the plastic is virtually featureless, so start by finding the edge of the plastic then focus upward until you locate the surface, then translate the stage so the field of view is approximately center no the plastic.
 * Once the surface of the plastic is in focus, switch to two-photon imaging, and adjust the Z position to locate the surface (the sharp transition from full-field darkness to full-field fluorescence)
 
-<img src="images/slide-edge.png" class="img-fluid my-5 border shadow d-block mx-auto">
+<img src="/patch/img/gear/uncaging/slide-edge.png" class="img-fluid my-5 border shadow d-block mx-auto">
 
 The edge of the slide looks like a cliff. The top of the slide is found by identifying the sharp edge at the corner, and typically small amounts of debris resting on the sufrace can be focused on
 
@@ -67,11 +67,11 @@ The edge of the slide looks like a cliff. The top of the slide is found by ident
 
 burned spot | crosshair alignment
 ---|---
-<img src="images/spot-before.png" class="img-fluid border border-dark">|<img src="images/spot-after.png" class="img-fluid border border-dark">
+<img src="/patch/img/gear/uncaging/spot-before.png" class="img-fluid border border-dark">|<img src="/patch/img/gear/uncaging/spot-after.png" class="img-fluid border border-dark">
 
 #### Grid Laser Targeting
 
-<img src="images/grid.gif" class="border border-dark shadow d-block mx-auto my-5 img-fluid">
+<img src="/patch/img/gear/uncaging/grid.gif" class="border border-dark shadow d-block mx-auto my-5 img-fluid">
 
 ## Create a Laser Targeting Protocol
 
@@ -83,7 +83,7 @@ To setup an uncaging experiment, expand the `Mark Points` window. Add points, li
 
 MarkPoints Dialog Window | Burning Spots
 ---|---
-<img src="images/markpoints.png" class="img-fluid border border-dark">|<img src="images/laser-targeting-smile.gif" class="img-fluid border border-dark">
+<img src="/patch/img/gear/uncaging/markpoints.png" class="img-fluid border border-dark">|<img src="/patch/img/gear/uncaging/laser-targeting-smile.gif" class="img-fluid border border-dark">
 
 ## ABF-Triggered Linescan with Uncaging
 
@@ -95,7 +95,7 @@ To perform a linescan where laser uncaging occurs at a given time during the sca
   * Synchronize: Each Repetition
   * Synchronize with: Mark Points Experiment (current)
 
-<img src="images/window-linescan.png" class="img-fluid shadow my-5">
+<img src="/patch/img/gear/uncaging/window-linescan.png" class="img-fluid shadow my-5">
 
 ### Mark Points Acquisition Settings
   * Initial Delay: 1000 ms
@@ -104,10 +104,10 @@ To perform a linescan where laser uncaging occurs at a given time during the sca
   * Wait for trigger: Never
   * Synchronization Frequency: Every Repetition
 
-<img src="images/window-markpoints.png" class="img-fluid shadow my-5">
+<img src="/patch/img/gear/uncaging/window-markpoints.png" class="img-fluid shadow my-5">
 
 ### ABF Protocol Settings
   * Scans are initiated on by the rising edge of the trigger line
   * An ABF with 3 sweeps is ideal for a linescan/markpoints with 3 repetition
 
-<a href="images/linescan-uncaging-desktop.png"><img src="images/linescan-uncaging-desktop.png" class="img-fluid shadow my-5"></a>
+<a href="/patch/img/gear/uncaging/linescan-uncaging-desktop.png"><img src="/patch/img/gear/uncaging/linescan-uncaging-desktop.png" class="img-fluid shadow my-5"></a>

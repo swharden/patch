@@ -9,7 +9,7 @@ description: Notes related to power and alignment of a Coherent Mira Optima 900-
 
 * [Coherent Mira Optima 900-F Operator's Manual](https://loci.wisc.edu/sites/default/files/2016-09/Mira%20Optima%20900-F%20Laser%20Operator%27s%20Manual%20%281%29.pdf)
 
-![](laser.jpg)
+![](/patch/img/gear/mira/laser.jpg)
 
 ## Improving Mode Lock
 
@@ -29,28 +29,28 @@ description: Notes related to power and alignment of a Coherent Mira Optima 900-
 
 ### Adjustments
 
-<img src="knobs.png" class="img-fluid">
+<img src="/patch/img/gear/mira/knobs.png" class="img-fluid">
 
 ### Left side
-<img src="200px-Laser2.jpg" class="img-fluid d-block mx-auto shadow">
+<img src="/patch/img/gear/mira/200px-Laser2.jpg" class="img-fluid d-block mx-auto shadow">
 
 ### Right side
-<img src="200px-Laser1.jpg" class="img-fluid d-block mx-auto shadow">
+<img src="/patch/img/gear/mira/200px-Laser1.jpg" class="img-fluid d-block mx-auto shadow">
 
 ### Not Locked
-<img src="300px-2p-sine.jpg" class="img-fluid d-block mx-auto shadow">
+<img src="/patch/img/gear/mira/300px-2p-sine.jpg" class="img-fluid d-block mx-auto shadow">
 
 ### Mode Locked
-<img src="300px-2p-locked.jpg" class="img-fluid d-block mx-auto shadow">
+<img src="/patch/img/gear/mira/300px-2p-locked.jpg" class="img-fluid d-block mx-auto shadow">
 
 ### Suggested Waveform
-<img src="manual-scope.png" class="img-fluid w-50 d-block mx-auto">
+<img src="/patch/img/gear/mira/manual-scope.png" class="img-fluid w-50 d-block mx-auto">
 
 ### Ideal output spectrum and power
-<img src="output.png" class="img-fluid w-50 d-block mx-auto">
+<img src="/patch/img/gear/mira/output.png" class="img-fluid w-50 d-block mx-auto">
 
 ### Micrometer Wavelength Adjustment
 
 On 2018-10-19 the micrometer was adjusted to tune the laser to 810nm. This is the reading at optimal tuning position.
 
-<img src="micrometer.jpg" class="img-fluid w-50 d-block mx-auto border shadow">
+<img src="/patch/img/gear/mira/micrometer.jpg" class="img-fluid w-50 d-block mx-auto border shadow">

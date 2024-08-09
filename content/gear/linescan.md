@@ -9,7 +9,7 @@ This page describes how to acquire two-photon LineScan recordings commanded by C
 
 Green | Red
 ---|---
-![](G.png)|![](R.png)
+![](/patch/img/gear/linescan/G.png)|![](/patch/img/gear/linescan/R.png)
 
 </div>
 
@@ -35,7 +35,7 @@ Green | Red
 
 * **Synchronization:** This can be used to synchronize laser targeted stimulation with linescan imaging. See the [two-photon uncaging](../uncaging) page for details.
 
-<img src="window-linescan.png" class="my-5 shadow img-fluid">
+<img src="/patch/img/gear/linescan/window-linescan.png" class="my-5 shadow img-fluid">
 
 ## Considerations
 
@@ -51,6 +51,6 @@ Green | Red
 
 ## Linescan Analysis
 
-<img src="imagej-linescan.png" class="my-5 img-fluid">
+<img src="/patch/img/gear/linescan/imagej-linescan.png" class="my-5 img-fluid">
 
 * See the [Two-photon Linescan Analysis](../../analysis/linescan/) page for additional information

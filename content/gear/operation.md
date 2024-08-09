@@ -94,28 +94,28 @@ NOTE: our pockel cell controller is broken such that it can only be manually adj
 
 ### Prarie View
 
-![](prarie.png)
+![](/patch/img/gear/operation/prarie.png)
 
 ### Live Imaging
 
-![](prarie-live.png)
+![](/patch/img/gear/operation/prarie-live.png)
 
 ### T series
 
-![](prarie-tseries.png)
+![](/patch/img/gear/operation/prarie-tseries.png)
 
 ### Z series
 
-![](prarie-zseries.png)
+![](/patch/img/gear/operation/prarie-zseries.png)
 
 ## Two Channels
 
-<img src="prarie-windows.png" class="img-fluid">
+<img src="/patch/img/gear/operation/prarie-windows.png" class="img-fluid">
 
 ## Merged Channels
 
-![](dual-color.png)
+![](/patch/img/gear/operation/dual-color.png)
 
 ## Range Check
 
-![](range-check.png)
+![](/patch/img/gear/operation/range-check.png)

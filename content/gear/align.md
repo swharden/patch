@@ -5,13 +5,11 @@ description: How to align DIC optics for a fixed-stage Olympus BX-51WI microscop
 
 A properly aligned light path is critically important for quality DIC imaging in acute brain slices. Once aligned, a DIC microscope will typically stay aligned. However, the cleaning of lenses and filters (necessary to recover after an overflow of ACSF) can misalign the DIC light path, requiring re-alignment. DIC integrity should be frequently assessed, and realignment performed whenever optics appear poor. Aligning DIC optics only takes a few minutes and will improve the quality of your data.
 
-| proper alignment                                 | poor alignment                                  |
-| ------------------------------------------------ | ----------------------------------------------- |
-| <img src="alignment-good.png" class="img-fluid"> | <img src="alignment-bad.png" class="img-fluid"> |
+proper alignment                                 | poor alignment                                 
+------------------------------------------------ | -----------------------------------------------
+<img src="/patch/img/gear/align/alignment-good.png" class="img-fluid"> | <img src="/patch/img/gear/align/alignment-bad.png" class="img-fluid">
 
-<a href='microscope-parts.png'>
-    <img src="microscope-parts.png" class="img-fluid my-5">
-</a>
+<img src="/patch/img/gear/align/microscope-parts.png" class="img-fluid my-5">
 
 > 💡 **Note:** these instructions assume the IR filter is always in the light path and the camera is being used to assess image brightness and quality. This is ideal because it’s the camera light path (not the binocular path) which must be ideally aligned.
 
@@ -34,9 +32,9 @@ Note: these instructions assume the IR filter is always in the light path and th
 
 <div class="d-flex justify-content-center">
 
-| Polarizer                                | No Polarizer                              |
-| ---------------------------------------- | ----------------------------------------- |
-| <img src="filter.png" class="img-fluid"> | <img src="filter2.png" class="img-fluid"> |
+Polarizer                                | No Polarizer                             
+---------------------------------------- | -----------------------------------------
+<img src="/patch/img/gear/align/filter.png" class="img-fluid"> | <img src="/patch/img/gear/align/filter2.png" class="img-fluid">
 
 </div>
 
@@ -71,9 +69,9 @@ Note: these instructions assume the IR filter is always in the light path and th
 
 <div class="d-flex justify-content-center">
 
-| Blurry Decagon                                   | Sharp Decagon                                   |
-| ------------------------------------------------ | ----------------------------------------------- |
-| <img src="decagon-blurry.png" class="img-fluid"> | <img src="decagon-sharp.png" class="img-fluid"> |
+Blurry Decagon                                   | Sharp Decagon                                  
+------------------------------------------------ | -----------------------------------------------
+<img src="/patch/img/gear/align/decagon-blurry.png" class="img-fluid"> | <img src="/patch/img/gear/align/decagon-sharp.png" class="img-fluid">
 
 </div>
 

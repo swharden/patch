@@ -39,22 +39,16 @@ Stuff related to software to control the stage on the 2P microscope, acquire ima
 
 ### immediately on loading
 
-<a href="ss1.jpg">
-<img src="ss1.jpg" class="img-fluid shadow">
-</a>
+<img src="/patch/img/gear/stage/ss1.jpg" class="img-fluid shadow">
 
 ### After subtracting DIC background
 
-<a href="ss2.jpg">
-<img src="ss2.jpg" class="img-fluid shadow">
-</a>
+<img src="/patch/img/gear/stage/ss2.jpg" class="img-fluid shadow">
 
 ### After blending
 
-<a href="ss3.jpg">
-<img src="ss3.jpg" class="img-fluid shadow">
-</a>
+<img src="/patch/img/gear/stage/ss3.jpg" class="img-fluid shadow">
 
 ## Source Code
 
-- [swh-stitch.zip](swh-stitch.zip) - a small collection of Python files
+- [swh-stitch.zip](/patch/img/gear/stage/swh-stitch.zip) - a small collection of Python files

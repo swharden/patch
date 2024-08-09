@@ -3,7 +3,7 @@ title: Pipette Puller
 description: How to make whole-cell patch-clamp pipettes using the P97 Flaming/Brown pipette puller
 ---
 
-<img src="p97.jpg" class="img-fluid d-block mx-auto m-5">
+<img src="/patch/img/gear/puller/p97.jpg" class="img-fluid d-block mx-auto m-5">
 
 ## Whole-Cell Patch Clamp Pipettes
 

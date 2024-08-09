@@ -1,6 +1,6 @@
 ---
 title: Confocal Microscope
-description: How to use the Nikon confocal microscope to image slides
+description: How to use the Nikon C2 confocal microscope to image slide-mounted fluorescent samples
 ---
 
 {{< specific >}}

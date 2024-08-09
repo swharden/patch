@@ -18,7 +18,7 @@ Patch-clamp technique can be used to measure the electrical properties of indivi
 
 The artificial cytoplasm (called **pipette solution** or **internal solution**) contains molecules typically found inside a neuron (K<sup>+</sup>, Ca<sup>2+</sup>, Ca<sup>2+</sup> buffer, ATP, GTP, etc.). Experiments are performed on brain slices submerged an **extracellular solution** consisting of oxygenated artificial cerebrospinal fluid (**ACSF**) containing molecules typically found in CSF (Cl<sup>-</sup>, Na<sup>+</sup>, buffering agents, etc.). 
 
-<img src="whole-cell.png" class="d-block mx-auto my-4 img-fluid">
+<img src="/patch/img/crash/intro/whole-cell.png" class="d-block mx-auto my-4 img-fluid">
 
 > 💡 An easy way to remember which ions are inside vs. outside neurons is to recall that neurons evolved in the ocean, so the major ions in salt water (Na<sup>+</sup> and Cl<sup>-</sup>) are in high concentrations _outside_ the neuron. Other ions (largely K<sup>+</sup>) exist at higher concentrations _inside_ the neuron.
 
@@ -26,7 +26,7 @@ The artificial cytoplasm (called **pipette solution** or **internal solution**) 
 
 What is actually being studied when a neuron is recorded? Since patch-clamp recordings measure the electrical difference between intracellular vs. extracellular solutions, what gets measured is just the thing that separates the two: the **cell membrane**. When we use patch-clamp technique characterize the electrical properties of a neuron, we really reporting the electrical properties of the _membrane_ that forms the cell we are puncturing.
 
-<img src="bilayer.png" class="d-block mx-auto my-4 rounded img-fluid border border-dark shadow">
+<img src="/patch/img/crash/intro/bilayer.png" class="d-block mx-auto my-4 rounded img-fluid border border-dark shadow">
 
 **Resistance** is the degree to which a material _resists_ the flow of ions. Since cell membranes are largely made of phospholipid bilayers, **cell membranes have a high resistance**. This means they do not readily permit the passage of ions without the help of membrane-embedded proteins that serve as channels for charged molecules (ions). Neural membranes contain large numbers of **ion channels** which act like little holes in the membrane and permit the flow of particular ions in or out of the neuron, reducing the membrane resistance while the channels are open. The inverse of resistance is **conductance**, and opening ion channels in the neural membrane increases conductance (and decreases resistance). There is a wide variety of ion channels, and they typically vary by what ions they pass (influencing whether they are excitatory or inhibitory) and what controls their open state (always open, gated by voltage, and/or gated by ligand binding).
 

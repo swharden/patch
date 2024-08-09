@@ -12,7 +12,7 @@ Patch-clamped neurons can be used to measure spontaneous currents that result fr
 
 ## Pre-Synaptic vs. Post-Synaptic
 
-<img src="synaptic-neuron.png" class="d-block mx-auto img-fluid">
+<img src="/patch/img/crash/synaptic-currents/synaptic-neuron.png" class="d-block mx-auto img-fluid">
 
 Synapses are the chemical connection between an upstream (pre-synaptic) and downstream (post-synaptic) neuron. When the pre-synaptic neuron fires an action potential (AP), neurotransmitter is released from the axon terminal. In this example, the neurotransmitter is excitatory. When the neurotransmitter acts on the post-synaptic neuron (the neuron being recorded), the excitatory action of that synapse is observed as an excitatory post-synaptic current. Although this method only directly measures currents in the post-synaptic neuron, the frequency of post-synaptic currents is related to the frequency of pre-synaptic action potential firing.
 
@@ -31,8 +31,8 @@ One more layer of abbreviations can be added to indicate if the synaptic current
 Consider the following figure which demonstrates spontaneous excitatory and inhibitory synaptic activity in the same cell measured in voltage-clamp mode and current-clamp modes:
 
 | voltage clamp (VC) | current clamp (IC) |
-| --- | --- |
-| <img src='synaptic-vc.png' class='img-fluid'> | <img src='synaptic-ic.png' class='img-fluid'> |
+--- | ---
+<img src='/patch/img/crash/synaptic-currents/synaptic-vc.png' class='img-fluid'> | <img src='/patch/img/crash/synaptic-currents/synaptic-ic.png' class='img-fluid'>
 
 **In voltage-clamp configuration** the trace represents net membrane current. Spontaneous post-synaptic currents (EPSCs and IPSCs) are visible. IPSCs are upward deflections representing inhibitory (outward) currents. EPSCs are inward deflections representing excitatory (inward) currents. It is useful to memorize that downward deflections in voltage-clamp configuration represent inward currents and are excitatory.
 

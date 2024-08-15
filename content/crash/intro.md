@@ -4,8 +4,6 @@ Description: Thinking about neurons as electrically excitable membranes
 weight: 20
 ---
 
-## Introduction
-
 Neurons are electrically excitable cells that typically interconnect to form complex networks with emergent properties that regulate thought, organ function, and behavior. Although networks of neurons are required to perform these advanced functions, much can be learned by studying neurons as the single cell level, and drugs designed to act on individual neurons can greatly influence function of these advanced networks. 
 
 In a simplified view, neurons sense inputs (chemical signals released from upstream neurons) and combine these signals to produce an output (chemical signal release) that may influence downstream neurons. Pharmacological modulation of any of these steps (signal sensing, integration, or signal release) at the level of the individual neuron may profoundly change the way the entire network operates. Discovering how pharmacological agents interact with pathways implicated in a disease can be an important first step toward developing therapeutics aimed at treating it.

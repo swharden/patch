@@ -2,39 +2,4 @@
 
 {{ .Content | replaceRE "(<h[1-9] id=\"([^\"]+)\".+)(</h[1-9]+>)" `<a href="#${2}">${1}</a> ${3}` | safeHTML }}
 
-    <nav>
-        <div class="d-flex justify-content-between mt-5">
-            {{ if .NextInSection }}
-            <div class="text-center">
-                <div>Previous</div>
-                <div>
-                    <a href="{{.NextInSection.Permalink}}" class="btn btn-primary">
-                        {{.NextInSection.Title}}
-                    </a>
-                </div>
-            </div>
-            {{ end }}
-
-            <div>
-                <div class="text-center">&nbsp;</div>
-                <div>
-                    <a href="{{ .Site.BaseURL }}" class="btn btn-secondary">
-                        Home
-                    </a>
-                </div>
-            </div>
-
-            {{ if .PrevInSection }}
-            <div>
-                <div class="text-center">Next</div>
-                <div>
-                    <a href="{{.PrevInSection.Permalink}}" class="btn btn-primary">
-                        {{.PrevInSection.Title}}
-                    </a>
-                </div>
-            </div>
-            {{ end }}
-        </div>
-    </nav>
-
     {{ end }}

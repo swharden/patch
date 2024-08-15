@@ -47,35 +47,20 @@
 
 <body class="m-0 p-0">
 
-  <header class="text-light" style="background-image: linear-gradient(#20558a, #144474);">
+  <header class="text-light" style="background-color: #144474">
     <div class="container limit-width py-3">
-      <div class="fs-1">{{ $.Title }}</div>
-      <div class="fs-5 fw-light">{{ .Param "description" }}</div>
+      <div class="fs-1"><a href='/patch/' class="text-light">The Patch Guide</a></div>
+      <div class="fs-5 fw-light">A Student's Guide to Patch-Clamp Electrophysiology</div>
     </div>
   </header>
 
   {{ if not .IsHome }}
-  <nav class="border-bottom shadow-bottom shadow-sm" style="background-image: linear-gradient(#f8f9fa, #f2f2f2);">
-    <div class="container limit-width py-2">
-      <a href="{{ .Site.BaseURL }}">
-        The Patch Guide
-      </a>
-
-      {{ if or .IsSection .IsPage }}
-      <span>»</span>
-      <a href="{{ (site.GetPage .Section).Permalink }}">
-        {{ (site.GetPage .Section).Title }}
-      </a>
-      {{ end }}
-
-      {{ if .IsPage }}
-      <span>»</span>
-      <a href='{{ .Permalink }}'>
-        {{ .Title }}
-      </a>
-      {{ end }}
+  <div class="container limit-width py-3">
+    <div class="border rounded bg-light px-3 py-2 mt-3">
+      <div class="fs-3 fw-semibold">{{ $.Title }}</div>
+      <div class="fs-5">{{ .Param "description" }}</div>
     </div>
-  </nav>
+  </div>
   {{ end }}
 
   <main class="bg-white">
@@ -87,32 +72,45 @@
     </div>
   </main>
 
-  <footer class="py-4 border-top bg-light">
-    <div class="container limit-width text-end">
+  <footer class="pb-5">
+    <div class="container limit-width">
 
-      <div class="d-flex justify-content-between">
+      <hr class="mb-4" />
 
-        <div class="text-start text-muted">
-          <div>
-            Copyright {{ now.Format "2006" }} <a href='https://github.com/swharden' class="text-dark">@swharden</a>
-          </div>
-          <div>
-            Built with Hugo {{ .Site.Hugo.Version }}
-          </div>
-          <div>
-            {{ time now | time.Format ":date_long" }}
-            at {{ time now "America/New_York" | time.Format ":time_short" }} EST
-          </div>
-        </div>
+      {{ if .NextInSection }}
+      <div>
+        Next Article:
+        <a href="{{.NextInSection.Permalink}}">
+          {{.NextInSection.Title}}
+        </a>
+      </div>
+      {{ end }}
 
-        <div>
-          <a href="https://github.com/swharden/patch">
-            <img class="github-edit-button" src="/patch/img/github-edit.svg" />
-          </a>
-        </div>
+      {{ if .PrevInSection }}
+      <div>Previous Article:
+        <a href="{{.PrevInSection.Permalink}}">
+          {{.PrevInSection.Title}}
+        </a>
+      </div>
+      {{ end }}
+
+      <div>
+        Copyright © {{ now.Format "2006" }}
+        <a href='https://swharden.com/about'>Scott W Harden</a>
       </div>
 
-    </div>
+      <div>
+        Built {{ time now | time.Format ":date_long" }}
+        at {{ time now "America/New_York" | time.Format ":time_short" }}
+        with <a href='https://gohugo.io/'>Hugo {{ .Site.Hugo.Version }}</a>
+      </div>
+
+      <div>
+        <a href="https://github.com/swharden/patch">
+          Edit this page
+        </a> on GitHub
+      </div>
+
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

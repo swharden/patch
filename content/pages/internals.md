@@ -1,6 +1,6 @@
 ---
 title: Patch Clamp Internal Solutions
-description: Common internal solutions used for whole-cell patch-clamp electrophysiology
+description: Common pipette solutions used for whole-cell patch-clamp electrophysiology
 ---
 
 When a cell enters whole-cell patch-clamp configuration the pipette solution (also called internal solution) fills the the patched cell and largely replaces most of the cytoplasm. Physiological pipette solutions can be used seek to mimic the natural electrical properties of cells, or experiments can use non-physiological pipette solutions to block or enhance the current flow through specific channels. 

@@ -43,8 +43,8 @@ description: How to use the Nikon C2 confocal microscope to image slide-mounted 
 * Ramamurthy lab
   * [Getting Started](https://www.youtube.com/watch?v=DsmMGmHEIJY)
   * [Operating the Microscope Visually](https://www.youtube.com/watch?v=zHfRcDHhL9A)
-  * [???](https://www.youtube.com/watch?v=bkUS86MFjaU) (YouTube)
-  * [???](https://www.youtube.com/watch?v=SGcKHdiOi8Y) (YouTube)
-  * [???](https://www.youtube.com/watch?v=-xX0tFMMRxo) (YouTube)
-  * [???](https://www.youtube.com/watch?v=3PvtLlRFgQk) (YouTube)
+  * [Confocal Microscopy Tutorial](https://www.youtube.com/watch?v=bkUS86MFjaU) (YouTube)
+  * [Confocal Microscopy Tutorial](https://www.youtube.com/watch?v=SGcKHdiOi8Y) (YouTube)
+  * [Confocal Microscopy Tutorial](https://www.youtube.com/watch?v=-xX0tFMMRxo) (YouTube)
+  * [Confocal Microscopy Tutorial](https://www.youtube.com/watch?v=3PvtLlRFgQk) (YouTube)
   * [How to clean oil from the objectives](https://www.youtube.com/watch?v=8_LclqI5zgI)
